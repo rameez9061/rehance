@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+
+            width: 100%;
+            height: 100%;
+        }
+
+        .grid {
+            max-width: 1300px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        header {
+
+            grid-column: span 3;
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: 60px;
+            justify-content: space-around;
+            padding: 10px;
+            background-color: white;
+        }
+
+        .mainscreen::before {
+
+            content: "";
+            background: url('https://images.unsplash.com/photo-1612548403247-aa2873e9422d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmlkZW8lMjBjYW1lcmF8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60')no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+
+        }
+
+        .mainscreen {
+            /* max-width: 1300px; */
+            grid-column: span 3;
+            height: 590px;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            /* background-color: rgba(135, 207, 235, 0.451); */
+            /* z-index: -1; */
+        }
+
+        .head {
+
+            text-align: center;
+            color: white;
+            z-index: 1;
+        }
+
+        .head h1 {
+
+            font-size: 4rem;
+            width: 800px;
+        }
+
+        .head p {
+
+            font-size: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        button {
+
+            padding: 15px 40px;
+            margin: 0px 5px;
+        }
+
+        #btn2 {
+
+            background-color: transparent;
+            border: 2px solid white;
+        }
+
+        #btn1:hover {
+
+            background-color: transparent;
+            border: 2px solid white;
+        }
+
+        #btn2:hover {
+
+            background-color: white;
+        }
+
+        .below {
+
+            grid-column: span 3;
+        }
+
+        .third {
+            max-width: 100%;
+            grid-column: span 3;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 1rem;
+            margin-bottom: 4rem;
+        }
+
+        .bottom {
+
+            grid-column: span 3;
+        }
+
+        .below {
+
+            grid-column: span 3;
+            text-align: center;
+            justify-content: center;
+            display: grid;
+
+            margin-top: 2rem;
+
+            margin-bottom: 6rem;
+        }
+
+        .below h1,
+        p {
+            width: 600px;
+        }
+
+        .first {
+            width: 200px;
+            text-align: center;
+            padding-left: 100px;
+            display: grid;
+            justify-content: center;
+
+        }
+
+        .img {
+
+            height: 180px;
+            width: 180px;
+            border-radius: 50%;
+            border: 2px solid orangered;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .img1 {
+            height: 180px;
+            width: 180px;
+            border-radius: 50%;
+            border: 2px solid green;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .img2 {
+
+            height: 180px;
+            width: 180px;
+            border-radius: 50%;
+            border: 2px solid orange;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+
+
+        .first p {
+            width: 180px;
+            text-align: center;
+        }
+
+        .bottom {
+
+            text-align: center;
+            color: grey;
+            font-weight: lighter;
+        }
+
+        @media screen and (max-width:1085px) {
+
+            .first {
+
+                padding-left: 40px;
+            }
+        }
+
+        @media screen and (max-width:800px) {
+            .mainscreen::before {
+
+                width: 100vw;
+            }
+
+
+
+
+
+
+        }
+
+        @media screen and (min-width:300px)and (max-width:700px) {
+
+            .grid {
+                width: 1800px;
+                grid-template-columns: 3fr 4fr 3fr;
+            }
+
+            header {
+
+                width: 175%;
+            }
+
+            .mainscreen {
+
+                width: 180%;
+                padding: 0px 0px;
+            }
+
+            .head h1 {
+
+                font-size: 2.5rem;
+                width: 521px;
+            }
+
+            .mainscreen::before {
+
+                width: 180%;
+            }
+
+            .img {
+
+                height: 150px;
+                width: 150px;
+            }
+
+            .img1 {
+
+                height: 150px;
+                width: 150px;
+            }
+
+            .img2 {
+
+                height: 150px;
+                width: 150px;
+            }
+
+            .first {
+
+                padding-left: 10px;
+            }
+
+            .below {
+
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                padding-left: 35px;
+            }
+
+            .bottom {
+
+                width: 175%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid">
+        <header>
+            <h1>MOVA</h1>
+            <h1>WISTIA</h1>
+        </header>
+        <div class="mainscreen">
+            <div class="head">
+
+                <h1>A Very Clear Statement of Your Offer</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni, pariatur!</p>
+
+
+                <button id="btn1">Request A Demo</button>
+                <button id="btn2">Watch A Video</button>
+            </div>
+
+        </div>
+        <div class="below">
+            <h1>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, vitae.</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam quaerat laboriosam ex, repellendus quas
+                dolorum eaque eum nemo sed veritatis!</p>
+        </div>
+
+        <div class="third">
+            <div class="first" id="f">
+                <div class="img">
+
+                    <img src="https://d9hhrg4mnvzow.cloudfront.net/templates.unbounce.com/mova-video/29f56f5a-mova-benefit-one-icon_1000000000000000000028.png"
+                        alt="">
+                </div>
+                <h2>Lorem, ipsum.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, veritatis?</p>
+            </div>
+            <div class="first" id="s">
+                <div class="img1">
+
+                    <img src="https://d9hhrg4mnvzow.cloudfront.net/templates.unbounce.com/mova-video/29f56f5a-mova-benefit-one-icon_1000000000000000000028.png"
+                        alt="">
+                </div>
+                <h2>Lorem, ipsum.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, veritatis?</p>
+            </div>
+            <div class="first" id="t">
+                <div class="img2">
+
+                    <img src="https://d9hhrg4mnvzow.cloudfront.net/templates.unbounce.com/mova-video/29f56f5a-mova-benefit-one-icon_1000000000000000000028.png"
+                        alt="">
+                </div>
+                <h2>Lorem, ipsum.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe, veritatis?</p>
+            </div>
+        </div>
+        <div class="bottom">
+            <h4>© 2010-2023 Unbounce. All rights reserved.
+            </h4>
+        </div>
+    </div>
+
+    
+</body>
+
+</html>

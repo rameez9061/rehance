@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+
+            width: 100%;
+            height: 100%;
+            color: white;
+        }
+
+        .main {
+
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+        }
+
+        .left {
+
+            width: 50%;
+            height: 100%;
+
+        }
+
+        .right {
+
+            width: 50%;
+            height: 100%;
+        }
+
+
+
+        .main::after {
+
+            content: "";
+            background: url('https://d9hhrg4mnvzow.cloudfront.net/templates.unbounce.com/allher/87edd99f-allher-hero-image-original_100000000000000000001o.jpg') no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            filter: brightness(0.8);
+        }
+
+        .logo {
+
+            position: absolute;
+            top: 5vw;
+            left: 14vw;
+        }
+
+        .logo h1 {
+
+            font-size: 3rem;
+            color: #00baf2;
+        }
+
+        .logo p {
+
+            font-size: 1rem;
+            text-align: center;
+            color: #00baf2;
+        }
+
+        .mid {
+
+            position: relative;
+            top: 15vw;
+            width: 380px;
+            left: 14vw;
+        }
+
+        .mid h1 {
+
+            font-size: 2.5rem;
+            color: white;
+        }
+
+        form {
+
+            position: relative;
+            top: 4vw;
+            left: 14vw;
+            height: 500px;
+            width: 290px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: rgba(255, 255, 255, 0.59);
+        }
+
+        .fmm {
+
+            margin-top: 2vw;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .fmm input {
+
+            width: 230px;
+            height: 34px;
+            font-size: 12px;
+            line-height: 12px;
+            padding-left: 10px;
+            padding-right: 10px;
+            border-radius: 20px;
+            border-style: none;
+        }
+
+        .fmm select {
+
+            width: 250px;
+            height: 34px;
+            font-size: 12px;
+            line-height: 12px;
+            padding-left: 10px;
+            padding-right: 10px;
+
+        }
+
+        form h1 {
+
+            font-size: 1.5rem;
+            color: black;
+            font-weight: 100;
+            margin: 0px 0px 0px 20px;
+        }
+
+        form label {
+
+            color: black;
+            font-weight: 800;
+        }
+
+        button {
+
+            margin-top: 4vw;
+            padding: 1vw 5vw;
+            border: none;
+            border-radius: 20px;
+            background-color: rgb(0 186 242);
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        #p1{
+
+            font-size: 2rem;
+            margin: 4vw 2vw 2vw 0vw;
+        }
+
+        #p2{
+
+            font-size: 1.5rem;
+            color: rgb(0 186 242);
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="left">
+
+            <div class="logo">
+                <h1>ALLH&Euml;R</h1>
+                <p>REAL STATE</p>
+            </div>
+
+            <div class="mid">
+                <h1>AN ATTENTION GRABBING HEADLINE WITH ONE STRONG IDEA</h1>
+                <p id="p1">Next Open House: </p>
+                <p id="p2">Saturday, May 21ST 12:00 PM - 5:00PM</p>
+            </div>
+        </div>
+        <div class="right">
+            <form action="">
+                <h1>What are you offering in exchange for someone's information?</h1>
+                <div id="name" class="fmm">
+                    <label for="name">Name*</label>
+                    <input type="text" name="" id="name">
+                </div>
+                <div id="email" class="fmm">
+                    <label for="email">Email*</label>
+                    <input type="email" name="" id="email">
+                </div>
+                <div id="phone" class="fmm">
+                    <label for="phone">Phone Number*</label>
+                    <input type="number" name="" id="phone">
+                </div>
+                <div id="state" class="fmm">
+                    <label for="state">State*</label>
+                    <select name="" id="state">
+                        <option value="select your state">select your state</option>
+                        <option value="Albama">Albama</option>
+                    </select>
+                </div>
+                <button>REQUEST SHOWING</button>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

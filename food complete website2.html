@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <style>
+        body {
+
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+
+            height: 100%;
+            width: 100%;
+            /* background-color: black; */
+        }
+
+        .con::before {
+
+            content: "";
+            background: url('https://images.unsplash.com/photo-1532980400857-e8d9d275d858?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80') no-repeat top center/cover;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 1000px;
+            width: 100%;
+            z-index: -1;
+            filter: brightness(0.4);
+        }
+
+        .navbar {
+
+            /* border: 2px solid green; */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 80px;
+            /* position: sticky;
+            top: 3px; */
+
+        }
+
+        .lists {
+
+            display: flex;
+            /* background-color: blue; */
+            position: relative;
+            right: 4vw;
+
+        }
+
+        .lists li {
+
+            list-style: none;
+            padding: 0px 24px;
+            color: white;
+
+
+        }
+
+        .lists li:hover {
+
+            background-color: white;
+            border-radius: 12px;
+            color: black;
+            cursor: pointer;
+        }
+
+        .logo {
+
+            font-size: 2rem;
+            /* border: 2px solid yellow; */
+            position: relative;
+            left: 6vw;
+            text-align: center;
+            font-weight: bold;
+            color: white;
+        }
+
+        .icons {
+
+            position: relative;
+            right: 4vw;
+        }
+
+        .material-icons {
+
+            padding: 0px 0.5vw;
+            color: white;
+        }
+
+        .con {
+
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            width: 500px;
+            /* margin-top: 350px; */
+            /* position: relative; */
+            /* left: 6vw; */
+            box-sizing: border-box;
+            padding-top: 500px;
+
+
+        }
+
+        .para {
+
+            height: 1.5rem;
+            color: burlywood;
+        }
+
+        .h1 h1 {
+
+            font-size: 3rem;
+            color: white;
+        }
+
+        .btn button {
+
+            padding: 15px 50px;
+            background-color: burlywood;
+            color: white;
+            cursor: pointer;
+        }
+
+        .box {
+
+            /* border: 2px solid red; */
+            width: 80%;
+            height: 500px;
+            background-color: white;
+            display: flex;
+            margin-top: 8rem;
+            position: relative;
+            left: 10%;
+            box-shadow: 2px 2px 2px grey;
+            box-sizing: border-box;
+
+        }
+
+        .text {
+
+            width: 70%;
+            height: 100%;
+            /* border: 2px solid red; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0px 80px;
+        }
+
+        .text h1 {}
+
+        #p1 {
+            color: burlywood;
+            margin-top: 1rem;
+            position: relative;
+            top: 2rem;
+        }
+
+        #p2 {
+
+            color: grey;
+        }
+
+        .btn2 {
+
+            width: 7rem;
+            font-size: 1rem;
+            padding: 0.5rem 0rem;
+            margin-top: 1.5rem;
+            cursor: pointer;
+        }
+
+
+        .image {
+
+            width: 50%;
+            height: 460px;
+            /* border: 2px solid green; */
+            padding: 20px 20px;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .image img {
+
+            width: 400px;
+            height: 400px;
+        }
+
+        .title {
+
+            /* border: 2px solid black; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 6rem;
+        }
+
+        #p3 {
+
+            color: burlywood;
+            position: relative;
+            top: 2rem;
+        }
+
+        .menu {
+
+            /* border: 2px solid red; */
+            width: 90%;
+            height: 700px;
+            margin-top: 0rem;
+            display: flex;
+            position: relative;
+            left: 5%;
+        }
+
+        .left {
+
+            width: 50%;
+            height: 100%;
+            /* border: 2px solid red; */
+
+        }
+
+        .price {
+
+            /* border: 2px solid blue; */
+            width: 80%;
+            height: 150px;
+            display: flex;
+            margin: 4rem 0rem 2rem 4rem;
+            box-shadow: 2px 2px 2px grey;
+        }
+
+        #left {
+
+            width: 30%;
+            height: 100%;
+            /* border: 2px solid pink; */
+        }
+
+        #left img {
+
+            width: 100%;
+            height: 100%;
+            /* border: 2px solid pink; */
+        }
+
+
+
+        #right {
+
+            width: 70%;
+            height: 100%;
+            /* border: 2px solid brown; */
+            padding-right: 2rem;
+        }
+
+        .right {
+
+            width: 50%;
+            height: 100%;
+            /* border: 2px solid red; */
+
+
+        }
+
+        .price2 {
+
+            /* border: 2px solid blue; */
+            width: 80%;
+            height: 150px;
+            display: flex;
+            margin: 4rem 0rem 2rem 4rem;
+            box-shadow: 2px 2px 2px grey;
+
+        }
+
+        #right h1 {
+
+            font-size: 1.5rem;
+            padding-left: 2rem;
+        }
+
+        #right p {
+
+            padding-left: 2rem;
+        }
+
+        #th {
+
+            font-size: 2.5rem;
+        }
+
+        .last {
+            margin-top: 12rem;
+            /* width: 99%; */
+            height: 600px;
+            /* border: 2px solid red; */
+            background: url('https://images.unsplash.com/photo-1556742393-d75f468bfcb0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2FzaGllcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            box-shadow: -2px -2px 2px grey;
+        }
+
+        .boxl {
+
+            /* border: 2px solid red; */
+            background-color: white;
+            width: 400px;
+            padding: 12px 40px;
+            position: relative;
+
+            left: 4rem;
+        }
+
+        .boxl p {
+            color: grey;
+        }
+
+        .boxl h2 {
+
+            color: rgb(75, 74, 74);
+            font-weight: normal;
+        }
+
+        .bt {
+
+            /* border: 2px solid yellow; */
+            height: 400px;
+            background-color: rgb(32, 29, 29);
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .bt h1 {
+            color: white;
+        }
+
+        .bt li {
+
+            color: grey;
+            list-style: none;
+            padding: 0.5rem 0rem;
+        }
+
+        .bt p {
+
+            color: grey;
+        }
+
+        .cen {
+
+            /* border: 2px solid red; */
+            width: 14vw;
+            height: 15rem;
+            position: relative;
+            top: 2rem;
+        }
+
+        .rows {
+
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .le {
+
+            position: relative;
+            top: 2rem;
+            left: 2rem;
+        }
+
+        .di{
+
+            width: 100%;
+        }
+
+        .ri {
+
+            position: relative;
+            right: 2rem;
+            top: 2rem;
+            /* border: 2px solid red; */
+            height: 15rem;
+            width: 20rem;
+        }
+
+        .ri input {
+
+            width: 10rem;
+            padding: 10px 40px;
+        }
+
+        .div {
+
+            /* border: 2px solid red; */
+            text-align: center;
+        }
+
+        @media screen and (max-width:1240px) {
+            #right h1 {
+                font-size: 0.5rem;
+
+            }
+
+            .menu {
+
+                display: flex;
+                flex-direction: column;
+            }
+
+            .con::before {
+
+                width: 1110px;
+                height: 1000px;
+                background-position: center center/cover;
+            }
+
+            .navbar {
+
+                flex-direction: column;
+
+            }
+
+            .logo {
+                font-size: 2rem;
+                border: 2px solid yellow;
+                /* position: relative; */
+                /* left: 0vw; */
+                text-align: center;
+                font-weight: bold;
+                color: white;
+            }
+
+            .lists {
+
+                position: relative;
+                right: 0px;
+                left: 4rem;
+            }
+
+            .icons {
+
+                position: relative;
+                left: 0;
+                right: 0;
+                border: 2px solid red;
+            }
+
+
+            .navbar li {
+                font-size: 1rem;
+                padding: 0px 7px;
+                padding-bottom: 8px;
+            }
+
+
+            .box{
+
+                flex-direction: column;
+            }
+
+            .image img{
+
+                width: 200px;
+                height: 200px;
+            }
+
+            .text{
+
+                padding: 0px 3px;
+            }
+
+
+            .di{
+
+                display: flex;
+                justify-content: center;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <nav class="navbar">
+            <div class="logo">
+                BURI.
+            </div>
+
+            <div class="lists">
+                <li>Home</li>
+                <li>About</li>
+                <li>Menu</li>
+                <li>Blog</li>
+                <li>Pages</li>
+                <li>Contact</li>
+            </div>
+
+            <div class="icons">
+                <i class="material-icons">computer</i>
+                <i class="material-icons">traffic</i>
+
+            </div>
+        </nav>
+
+        <section class="con">
+            <div class="para">
+                <p>Lorem ipsum dolor sit amet.</p>
+            </div>
+            <div class="h1">
+                <h1>Modern Restaurant in the center of the city</h1>
+            </div>
+
+            <div class="btn">
+                <button>Book a Table.</button>
+            </div>
+        </section>
+<div class="di">
+
+    <div class="box">
+        <div class="text">
+            <p id="p1">About Us</p>
+            <h1>Delicious Food Provider Since 1990</h1>
+            <p id="p2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias optio dicta ad deleniti
+                explicabo! Ad, mollitia ut ullam cumque quas optio, dolores fugit nihil fuga dolorum excepturi
+                commodi rem dignissimos.</p>
+                <button class="btn2">Learn More</button>
+            </div>
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1555554317-766200eb80d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZGFyayUyMGZvb2QlMjBwaG90b2dyYXBoeXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60"
+                alt="">
+            </div>
+        </div>
+    </div>
+        
+        <div class="title">
+            <p id="p3">
+                Popular Menu
+            </p>
+            <h1 id="th">Delicious Food Menu</h1>
+        </div>
+
+        <div class="menu">
+            <div class="left">
+                <div class="price">
+                    <div id="left">
+                        <img src="https://images.unsplash.com/photo-1558584724-0e4d32ca55a4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fGRhcmslMjBmb29kJTIwcGhvdG9ncmFwaHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60"
+                            alt="">
+                    </div>
+                    <div id="right">
+
+                        <h1>Egg Sandwich</h1>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse, eius.</p>
+                        <h1>Form $40.00</h1>
+
+                    </div>
+
+                </div>
+                <div class="price">
+                    <div id="left">
+                        <img src="https://images.unsplash.com/photo-1618485476408-4aca780ba55c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGRhcmslMjBmb29kJTIwcGhvdG9ncmFwaHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60"
+                            alt="">
+                    </div>
+                    <div id="right">
+                        <h1>Roasted Marrow</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. P</p>
+                        <h1>Form $40.00</h1>
+
+                    </div>
+
+                </div>
+                <div class="price">
+                    <div id="left">
+                        <img src="https://images.unsplash.com/photo-1460380410874-537ecece3984?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGRhcmslMjBmb29kJTIwcGhvdG9ncmFwaHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60"
+                            alt="">
+                    </div>
+                    <div id="right">
+                        <h1>Roasted Marrow</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pa</p>
+                        <h1>Form $40.00</h1>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="right">
+                <div class="price2">
+                    <div id="left">
+                        <img src="https://images.unsplash.com/photo-1593114630390-e35acaa7d7d6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjR8fGRhcmslMjBmb29kJTIwcGhvdG9ncmFwaHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60"
+                            alt="">
+                    </div>
+                    <div id="right">
+                        <h1>Roasted Marrow</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatu</p>
+                        <h1>Form $40.00</h1>
+                    </div>
+
+                </div>
+                <div class="price2">
+                    <div id="left">
+                        <img src="https://plus.unsplash.com/premium_photo-1676920033611-2d2fd70aadab?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mzd8fGRhcmslMjBmb29kJTIwcGhvdG9ncmFwaHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60"
+                            alt="">
+                    </div>
+                    <div id="right">
+                        <h1>Roasted Marrow</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pa!</p>
+                        <h1>Form $40.00</h1>
+                    </div>
+
+                </div>
+                <div class="price2">
+                    <div id="left">
+                        <img src="https://plus.unsplash.com/premium_photo-1676029737373-4003757ec173?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDN8fGRhcmslMjBmb29kJTIwcGhvdG9ncmFwaHl8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60"
+                            alt="">
+                    </div>
+                    <div id="right">
+                        <h1>Roasted Marrow</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <h1>Form $40.00</h1>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="last">
+
+            <div class="boxl">
+                <h1>Contact Us</h1>
+
+                <div class="add">
+                    <h2>Address</h2>
+                    <p>240, Kings street, New York city USA</p>
+                </div>
+
+                <div class="we">
+                    <h2>We are Open</h2>
+                    <p>Mon - Fri (9.00-19.00)</p>
+
+                    <p> Sat - Sun (9.00-19.00)</p>
+                </div>
+
+                <div class="res">
+                    <h2>Reservation</h2>
+                    <p>+880 367 251 167</p>
+                    <p>barires@contact.com</p>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="bt">
+            <div class="le">
+                <h1>BURI.</h1>
+                <p>+880 253 356 263</p>
+                <p>burires@contact.com</p>
+                <i class="material-icons">computer</i>
+                <i class="material-icons">traffic</i>
+            </div>
+
+            <div class="cen">
+                <h1>Quick Links</h1>
+                <div class="rows">
+
+                    <div class="row">
+                        <li>About</li>
+                        <li>Reservation</li>
+                        <li>Menu</li>
+                        <li>Blog</li>
+                    </div>
+                    <div class="row2">
+                        <li>Breakfast</li>
+                        <li>Lunch</li>
+                        <li>Dinner</li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ri">
+                <h1>Subscribe Newsletter</h1>
+                <input type="email" name="" id="" placeholder="Email Address">
+                <p>Subscribe newsletter to get all updates about discount and offers</p>
+            </div>
+
+        </footer>
+        <div class="div">
+            <p>Copyright ©2023 All rights reserved | This template is made with by Colorlib</p>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

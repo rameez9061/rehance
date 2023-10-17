@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Baloo+Bhaijaan+2&family=Balsamiq+Sans&family=Dancing+Script&family=Merriweather:wght@300&family=Poppins:ital,wght@0,700;0,800;0,900;1,400&family=Roboto&family=Roboto+Slab:wght@300;700&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins';
+
+        }
+
+        body {
+            background-color: white;
+            color: black;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .lightmode {
+
+            background-color: white;
+            color: black;
+        }
+
+        .darkmode {
+
+            background-color: black;
+            color: white;
+        }
+
+        .circlemode {
+
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+
+
+        .main {
+
+            width: 100%;
+            height: auto;
+        }
+
+        .bac {
+            width: 100%;
+            height: 100%;
+        }
+
+        .top::before {
+
+            content: "";
+            background: url(image1.png);
+            background-position: center;
+            background-repeat: no no-repeat;
+            background-size: cover;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 60px;
+            z-index: -1;
+            filter: brightness(0.4);
+        }
+
+        .top {
+
+            width: 100%;
+            height: 60px;
+            /* background-color: black; */
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: fixed;
+            z-index: 999;
+            box-shadow: 2px 2px 12px 2px #8490ff;
+            top: 2px;
+        }
+
+        .lists {
+            display: flex;
+            align-items: center;
+        }
+
+        .lists ul {
+
+            display: flex;
+            align-items: center;
+        }
+
+        .lists ul li {
+
+            list-style: none;
+            padding-right: 2rem;
+        }
+
+
+        .lists ul li a {
+
+            text-decoration: none;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+
+
+        .icon i {
+
+            display: none;
+            cursor: pointer;
+        }
+
+        .footer{
+
+            margin-top: 6rem;
+    box-sizing: border-box;
+background-color: #04091e;
+max-width: 1280px;
+height: 450px;
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    column-gap: 0rem;
+    justify-items: center;
+    align-items: center;
+    
+}
+
+
+.side{
+
+    padding: 0rem 2rem ;
+
+   
+}
+
+
+.side h3{
+    
+
+    color: white;
+    margin: 1rem;
+
+}
+
+
+
+
+
+.side p{
+
+    color: grey;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 1rem;
+}
+
+.search i{
+
+    color: white;
+    background-color: #8490ff;
+   font-size: 1.5rem;
+   position: relative;
+   top: 0.5rem;
+   right: 0.2rem;
+   cursor: pointer;
+}
+
+
+#side1{
+
+    position: relative;
+    top: 1rem;
+}
+
+
+
+
+
+.ic i{
+
+    color: white;
+    padding-right: 0.5rem;
+    cursor: pointer;
+    
+}
+.ic i:hover{
+
+    color: #8490ff;
+}
+
+.search ::placeholder{
+
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+    </style>
+</head>
+
+<body id="body">
+    <div class="main">
+        <div class="top">
+
+            <div class="log">
+                <h1>Rameez
+
+                </h1>
+            </div>
+            <div class="lists">
+                <ul id="tags">
+                    <li><a href="rameez.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li>
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Pages</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+                <div class="circlemode" id="gol"><i class="ri-moon-fill"></i></div>
+            </div>
+
+            <div class="icon">
+                <i id="btn" class="ri-menu-line"></i>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="side" id="side1">
+                <h3>About Me</h3>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat tempore placeat laboriosam ea
+                    quibusdam accusantium ad iste omnis, velit explicabo.</p>
+            </div>
+            <div class="side" id="side2">
+                <h3>Newsletter</h3>
+                <p>Lorem ipsum dolor sit amet.</p>
+                <div class="search">
+                    <input type="email" name="" id="" placeholder="EMAIL ADDRESS">
+                    <i class="ri-arrow-right-line"></i>
+
+                </div>
+            </div>
+            <div class="side" id="side3">
+                <h3>Follow Me</h3>
+                <p>Let us be social</p>
+                <div class="ic">
+                    <i class="ri-facebook-fill"></i>
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-basketball-line"></i>
+                    <i class="ri-instagram-fill"></i>
+                </div>
+            </div>
+    </div>
+    <script>
+let body = document.getElementById('body');
+let gol = document.getElementById('gol');
+
+gol.addEventListener('click', function () {
+
+  if (body.classList.contains('lightmode') || body.className === '') {
+
+    body.className = 'darkmode';
+    gol.style.backgroundColor = 'orange';
+    gol.style.color = 'white';
+  } else {
+
+    body.className = 'lightmode';
+    gol.style.backgroundColor = 'white';
+    gol.style.color = 'black';
+  }
+})
+
+    </script>
+</body>
+
+</html>

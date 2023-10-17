@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        * {
+
+            margin: 0;
+            padding: 0;
+        }
+
+        html,
+        body {
+
+            width: 100%;
+            height: 100%;
+        }
+
+        .main {
+
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+        }
+
+        .left {
+
+            width: 30vw;
+            height: 100vh;
+            /* background-color: cadetblue; */
+        }
+
+        .right {
+
+            width: 70vw;
+            height: 100vh;
+            background-color: cornflowerblue;
+        }
+
+        .top {
+
+            display: flex;
+            justify-content: space-around;
+            margin-top: 2vw;
+        }
+
+        #lists {
+
+            display: flex;
+            list-style: none;
+        }
+
+        #lists li {
+            padding: 0vw 2vw;
+        }
+
+        .mid {
+
+            width: 25vw;
+            position: absolute;
+            top: 15vw;
+            left: 5vw;
+        }
+
+        .mid h1 {
+
+            font-size: 4rem;
+
+        }
+
+        .mid p {
+
+            margin-top: 2vw;
+        }
+
+        button {
+            margin-top: 2vw;
+            padding: 4px;
+            border: none;
+            border-bottom: 2px solid black;
+            cursor: pointer;
+        }
+
+        .icon i {
+
+            color: #1da1f2;
+        }
+
+        .top1{
+
+           width: 100%;
+           height: 50vh;
+           background-color: brown;
+           display: flex;
+        }
+
+        .left1{
+                
+            width: 40vw;
+            height: 50vh;
+            background: url('https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGNhY3R1c3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60')no-repeat center center/cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .right1{
+
+            width: 30vw;
+            height: 50vh;
+           background: url('https://images.unsplash.com/photo-1517281749396-564b95a206c3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2021&q=80')no-repeat center center/cover;
+        }
+
+        .left1 h1{
+            font-size: 4rem;
+            color: white;
+            text-transform: uppercase;
+            z-index: 20;
+        }
+
+        .bottom{
+height: 50vh;
+width: 70vw;
+            background: url('https://images.unsplash.com/photo-1533090161767-e6ffed986c88?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fHdoaXRlJTIwcG90JTIwd2l0aCUyMGdyZWVuJTIwcGxhbnR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60')no-repeat center center/cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+
+        <div class="left">
+
+            <div class="top">
+                <i class="ri-arrow-left-line"></i>
+                <div id="lists">
+
+                    <li>About</li>
+                    <li>Work</li>
+                </div>
+                <div class="icon">
+
+                    <i class="ri-twitter-fill"></i>
+                </div>
+            </div>
+
+            <div class="mid">
+                <h1>Hello,</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem, laborum.</p>
+                <button>Read</button>
+            </div>
+
+        </div>
+        <div class="right">
+            <div class="top1">
+                <div class="left1">
+<h1>Desig</h1>
+<h1 id="second">nerd</h1>
+                </div>
+                <div class="right1">
+
+                </div>
+            </div>
+            <div class="bottom">
+
+            </div>
+        </div>
+    </div>
+  
+</body>
+
+</html>

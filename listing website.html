@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+
+            margin: 0;
+            padding: 0;
+            background-color: black;
+            color: white;
+            /* width: 100%;
+            height: 100%; */
+        }
+
+        .main {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        .section::before {
+
+            content: "";
+            background: url('https://images.unsplash.com/photo-1616440347437-b1c73416efc2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Z2FtaW5nJTIwc2V0dXB8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60') no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        .top {
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 1vw;
+            height: 5vw;
+            position: sticky;
+            top: 3px;
+            box-shadow: inset 0 70px 140px rgba(25, 25, 25, 0.5);
+        }
+
+        .section {
+
+            /* border: 2px solid green; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .input {
+            /* border: 2px solid aqua; */
+            display: flex;
+            padding: 2vw;
+
+            box-shadow: inset 2vw 2vw 8vw;
+
+        }
+
+        #input input {
+
+            padding: 1vw 4vw;
+        }
+
+        #input2 input {
+
+            padding: 1vw 4vw;
+        }
+
+        .input span {
+            color: black;
+            margin: 0vw 1vw;
+        }
+
+        #search2 button {
+            padding: 1vw 2vw;
+            margin: 0vw 2vw;
+            border-radius: 2vw;
+            background-color: aqua;
+        }
+
+        #buttons {
+
+            margin: 3vw 0vw;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        #buttons button {
+
+            margin: 1vw;
+            padding: 1vw 2vw;
+            border-radius: 2vw;
+            background-color: transparent;
+            color: white;
+
+        }
+
+        #buttons button:hover {
+
+            background-color: blueviolet;
+        }
+
+        .section h1 {
+            font-family: 'work';
+            font-size: 6vw;
+            height: 2vw;
+            margin-bottom: 5vw;
+        }
+
+        .section p {
+
+            font-size: 2vw;
+            display: block;
+            text-align: center;
+            width: 37vw;
+            /* border: 2px solid red; */
+            margin-bottom: 5vw;
+        }
+
+        #logo {
+
+            /* border: 2px solid red; */
+            height: 3vw;
+            display: flex;
+            align-items: center;
+        }
+
+        #search {
+
+            /* border: 2px solid red; */
+
+        }
+
+        #search input {
+
+            padding: 1.2vw 5vw;
+            border-radius: 25px;
+        }
+
+        #icons {
+
+            /* border: 2px solid red; */
+            display: flex;
+            position: relative;
+            right: 2vw;
+            font-weight: 600;
+        }
+
+        #icons li {
+
+            list-style: none;
+            padding: 1vw;
+
+        }
+
+        #sign {
+
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+            height: 4vw;
+        }
+
+        #sign h4 {
+
+            padding: 1vw;
+            font-size: 2vw;
+        }
+
+        #sign button {
+            padding: 0vw 2vw;
+
+            border-radius: 4vw;
+            background-color: aqua;
+            width: 12vw;
+            height: 4vw;
+
+        }
+
+        .page {
+            width: 100%;
+            height: auto;
+
+
+            background-color: white;
+            /* border: 2px solid red; */
+
+        }
+
+        .heading h1 {
+
+            color: black;
+            /* border: 2px solid red; */
+            text-align: center;
+            font-size: 3vw;
+
+
+
+        }
+
+        .heading {
+
+            padding: 5vw;
+        }
+
+
+        .image1 {
+            width: 12vw;
+            height: 12vw;
+            /* border: 2px solid red; */
+            border-radius: 50%;
+            background: url('https://images.unsplash.com/photo-1485871981521-5b1fd3805eee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8bmV3JTIweW9ya3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60') no-repeat center center/cover;
+
+            transition: all rameez 2s ease-in 0s 1 normal;
+
+
+        }
+
+        .image1:hover {
+
+            transform: scale(1.02, 1.02);
+        }
+
+        .image2 {
+            width: 12vw;
+            height: 12vw;
+            /* border: 2px solid red; */
+            border-radius: 50%;
+            background: url('https://images.unsplash.com/photo-1586576782138-19304c43d0e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHRvcm9udG98ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60') no-repeat center center/cover;
+            transition: all rameez 2s ease-in 0s 1 normal;
+
+
+        }
+
+        .image2:hover {
+
+            transform: scale(1.02, 1.02);
+        }
+
+        .image3 {
+            width: 12vw;
+            height: 12vw;
+            /* border: 2px solid red; */
+            border-radius: 50%;
+            background: url('https://images.unsplash.com/photo-1490077476659-095159692ab5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHRoYWlsYW5kfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60') no-repeat center center/cover;
+            transition: all rameez 2s ease-in 0s 1 normal;
+
+        }
+
+        .image3:hover {
+
+            transform: scale(1.02, 1.02);
+        }
+
+        .image4 {
+            width: 12vw;
+            height: 12vw;
+            /* border: 2px solid red; */
+            border-radius: 50%;
+            background: url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8cGFyaXN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60') no-repeat center center/cover;
+            transition: all rameez 2s ease-in 0s 1 normal;
+
+        }
+
+        .image4:hover {
+
+            transform: scale(1.02, 1.02);
+        }
+
+        .image5 {
+            width: 12vw;
+            height: 12vw;
+            /* border: 2px solid red; */
+            border-radius: 50%;
+            background: url('https://images.unsplash.com/photo-1564034503-e7c9edcb420c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZGhha2F8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60') no-repeat center center/cover;
+            transition: all rameez 2s ease-in 0s 1 normal;
+
+        }
+
+        .image5:hover {
+
+            transform: scale(1.02, 1.02);
+        }
+
+        .image6 {
+            width: 12vw;
+            height: 12vw;
+            /* border: 2px solid red; */
+            border-radius: 50%;
+            background: url('https://images.unsplash.com/photo-1552832230-c0197dd311b5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cm9tZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60') no-repeat center center/cover;
+            transition: all rameez 2s ease-in 0s 1 normal;
+
+        }
+
+        .image6:hover {
+
+            transform: scale(1.02, 1.02);
+        }
+
+
+        .fig {
+
+            padding: 0vw 1vw;
+        }
+
+
+        .row {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .fig {
+
+            /* text-decoration: none; */
+            text-align: center;
+            /* border: 2px solid red; */
+        }
+
+        .fig a {
+            text-decoration: none;
+        }
+
+        .abhi {
+
+            color: black;
+            text-align: center;
+            margin-top: 18vw;
+            padding: 2vw 2vw;
+
+
+        }
+
+        .abhi h1 {
+
+            font-size: 4vw;
+
+
+        }
+
+        .abhi p {
+
+            font-size: 1.5vw;
+            position: relative;
+            bottom: 2vw;
+        }
+
+        .things {
+
+            /* border: 2px solid red; */
+            width: 100%;
+            height: auto;
+            margin-top: 0vw;
+            padding: vw;
+            display: flex;
+            justify-content: center;
+            color: black;
+        }
+
+        .box {
+
+            /* border: 2px solid red; */
+            width: 35vw;
+            height: 30vw;
+            margin: 2vw;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: black;
+        }
+
+        #pic1 {
+
+            /* border: 2px solid green; */
+            width: 25vw;
+            height: 20vw;
+            margin: 1vw;
+            background: url('https://images.unsplash.com/photo-1521017432531-fbd92d768814?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmVzdGF1cmFudCUyMGFuZCUyMGJhcnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60') no-repeat center center/cover;
+            border-radius: 2vw;
+        }
+
+        #pic2 {
+
+            /* border: 2px solid green; */
+            width: 25vw;
+            height: 20vw;
+            margin: 1vw;
+            background: url('https://images.unsplash.com/photo-1526772662000-3f88f10405ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fG91dGRvb3J8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60') no-repeat center center/cover;
+            border-radius: 2vw;
+
+        }
+
+        #pic3 {
+
+            /* border: 2px solid green; */
+            width: 25vw;
+            height: 20vw;
+            margin: 1vw;
+            background: url('https://plus.unsplash.com/premium_photo-1661369889067-c86c31362f83?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8cmVzdGF1cmFudHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=600&q=60') no-repeat center center/cover;
+            border-radius: 2vw;
+        }
+
+
+
+        #pic4 {
+
+            /* border: 2px solid green; */
+            width: 25vw;
+            height: 20vw;
+            margin: 1vw;
+            background: url('https://images.unsplash.com/photo-1526491109672-74740652b963?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fG91dGRvb3IlMjBjYW1waW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60') no-repeat center center/cover;
+            border-radius: 2vw;
+        }
+
+        #box2 {
+
+            background: url('https://images.unsplash.com/photo-1575279099331-ab1894fc7b97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHNob3BwaW5nJTIwY2VudGVyfGVufDB8fDB8fHww&auto=format&fit=crop&w=600&q=60') no-repeat center center/cover;
+            border-radius: 2vw;
+        }
+
+        #box1 {
+
+            position: relative;
+            left: 3vw;
+        }
+
+        #box3 {
+
+            position: relative;
+            right: 3vw;
+        }
+
+        .secmain {
+
+            background-color: rgb(202, 206, 204);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="top">
+            <div id="logo">
+                <h1>Gricklo</h1>
+            </div>
+            <div id="search">
+                <input type="text" name="" id="" placeholder="search">
+            </div>
+            <div id="icons">
+                <li>Home</li>
+                <li>Listing</li>
+                <li>About</li>
+                <li>Blog</li>
+                <li>Contact</li>
+            </div>
+            <div id="sign">
+                <h4>Sign in</h4>
+                <button>Sign in</button>
+            </div>
+
+        </div>
+        <div class="section">
+            <h1>Listing made easy.</h1>
+            <p>Explore vacation rentals, bar & restaurants and experiences . Find amazing places to visit</p>
+            <div class="input">
+
+                <div id="input">
+                    <span>what?</span><input type="text" name="" id="" placeholder="Ex:Food ,service,shopping">
+                </div>
+                <div id="input2">
+
+                    <span>where?</span><input type="text" name="" id="" placeholder="your city">
+                </div>
+
+                <div id="search2">
+                    <button>search</button>
+                </div>
+            </div>
+
+            <div id="buttons">
+
+                <button>Restaurant</button>
+                <button>Home</button>
+                <button>Party</button>
+                <button>shopping</button>
+                <button>Hotel</button>
+            </div>
+
+        </div>
+
+        <div class="page">
+            <section class="seaction">
+                <div class="heading">
+                    <h1>Top Destination</h1>
+                </div>
+                <div class="row">
+                    <div class="fig">
+
+                        <div class="image1" id="image1">
+
+                        </div>
+                        <a href="">New York</a>
+                    </div>
+
+                    <div class="fig">
+                        <div class="image2" id="image2"></div>
+                        <a href="">Toronto</a>
+
+                    </div>
+                    <div class="fig">
+                        <div class="image3" id="image3"></div>
+                        <a href="">Thailand</a>
+
+                    </div>
+                    <div class="fig">
+                        <div class="image4" id="image4"></div>
+                        <a href="">Paris</a>
+
+                    </div>
+                    <div class="fig">
+                        <div class="image5" id="image5"></div>
+                        <a href="">Dhaka</a>
+
+                    </div>
+                    <div class="fig">
+                        <div class="image6" id="image6"></div>
+                        <a href="">Rome</a>
+
+                    </div>
+                </div>
+
+                <div class="secmain">
+
+                    <div class="abhi">
+
+                        <h1>Things you are Interested In</h1>
+                        <p>Things You are Looking for Today</p>
+                    </div>
+
+                    <div class="things">
+                        <div class="box" id="box1">
+                            <div id="pic1">
+
+                            </div>
+                            <div id="pic2">
+
+                            </div>
+                        </div>
+                        <div class="box" id="box2"></div>
+                        <div class="box" id="box3">
+                            <div id="pic3">
+
+                            </div>
+                            <div id="pic4">
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

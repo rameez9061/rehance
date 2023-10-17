@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&family=Balsamiq+Sans&family=Dancing+Script&family=Merriweather:wght@300&family=Roboto+Slab:wght@300;700&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+
+            width: 100%;
+            height: 100%;
+        }
+
+        .head {
+
+            text-align: center;
+            margin-top: 2vw;
+            margin-bottom: 2vw;
+        }
+
+        .head h1 {
+
+            font-weight: 200;
+            padding: 0px 4px;
+            color: rgb(204 130 80);
+        }
+
+        .head span {
+
+            font-weight: 800;
+            padding: 0px 2px;
+            color: rgb(204 130 80);
+        }
+
+        .box1 {
+
+            border: 2px solid rgb(204 130 80);
+            width: 350px;
+            height: 200px;
+            margin: 2vw;
+            position: relative;
+            top: 2vw;
+            left: 2vw;
+        }
+
+        .box2 {
+
+            border: 2px solid rgb(204 130 80);
+            width: 350px;
+            height: 200px;
+            margin: 2vw;
+            position: relative;
+            top: 4vw;
+            left: 11vw;
+        }
+
+        .box1 img {
+
+            width: 100%;
+            height: 100%;
+            position: relative;
+            bottom: 2vw;
+            left: 2vw;
+        }
+
+        .box2 img {
+
+            width: 100%;
+            height: 100%;
+            position: relative;
+            right: 2vw;
+            bottom: 2vw;
+        }
+
+        .box3 {
+
+            height: 350px;
+            width: 400px;
+            /* border: 2px solid rgb(204 130 80) ; */
+            box-sizing: border-box;
+            position: relative;
+            left: 15vw;
+            padding: 5vw 2vw;
+            margin-top: 5vw;
+
+        }
+
+        .box3 h4 {
+
+            font-size: 2rem;
+            margin-bottom: 2vw;
+        }
+
+        .box3 p {
+
+            font-size: 1.2rem;
+        }
+
+        .first {
+
+            width: 100%;
+            height: 570px;
+            /* border: 2px solid red; */
+            display: flex;
+        }
+
+        .boxes {
+
+            width: 530px;
+            height: 570px;
+            /* border: 2px solid red; */
+            position: relative;
+            left: 15vw;
+        }
+
+        .bar {
+
+            width: 100%;
+            height: 850px;
+            display: flex;
+            position: relative;
+            /* bottom: 10vw; */
+            /* z-index: -1; */
+
+        }
+
+        .left {
+
+            width: 50%;
+            height: 100%;
+            background-color: rgb(249 242 237);
+            /* display: flex;
+            flex-direction:column ;
+            align-items: end; */
+        }
+
+        .right {
+
+            width: 50%;
+            height: 100%;
+            background-color: rgb(243 230 220);
+        }
+
+        #h1 {
+
+            text-align: center;
+            position: relative;
+            top: 6vw;
+            margin-top: 4vw;
+            margin-bottom: 6vw;
+        }
+
+        .b {
+            width: 90%;
+            position: relative;
+            top: 4vw;
+            /* border: 2px solid red; */
+            display: flex;
+            margin: 2vw;
+            justify-content: end;
+
+
+        }
+
+        #img {
+
+            width: 61px;
+            height: 60px;
+            border-radius: 50%;
+            /* border: 2px solid blue; */
+            background-image: url(https://d9hhrg4mnvzow.cloudfront.net/templates.unbounce.com/cordova-academy/b659a0be-cordova-academy-icon-desktop_1000000000000000000028.png);
+            background-position: center;
+            background-size: contain;
+            margin: 0vw 2vw;
+            border: 1px solid rgb(204, 130, 80);
+        }
+
+        #img2 {
+
+            width: 61px;
+            height: 60px;
+            border-radius: 50%;
+            /* border: 2px solid blue; */
+            background-image: url(https://d9hhrg4mnvzow.cloudfront.net/templates.unbounce.com/cordova-academy/e23775b8-cordova-academy-icon-book_1000000000000000000028.png);
+            background-position: center;
+            background-size: contain;
+            margin: 0vw 2vw;
+            border: 1px solid rgb(204, 130, 80);
+        }
+
+        #img3 {
+
+            width: 61px;
+            height: 60px;
+            border-radius: 50%;
+            /* border: 2px solid blue; */
+            background-image: url(https://d9hhrg4mnvzow.cloudfront.net/templates.unbounce.com/cordova-academy/15ed6204-cordova-academy-icon-suitcase_1000000000000000000028.png);
+            background-position: center;
+            background-size: contain;
+            margin: 0vw 2vw;
+            border: 1px solid rgb(204, 130, 80);
+        }
+
+
+
+        .b2 {
+            width: 90%;
+            position: relative;
+            top: 4vw;
+            /* border: 2px solid red; */
+            display: flex;
+            margin: 2vw;
+            justify-content: end;
+
+        }
+
+        .b3 {
+            width: 90%;
+            position: relative;
+            top: 4vw;
+            /* border: 2px solid red; */
+            display: flex;
+            margin: 2vw;
+            justify-content: end;
+
+        }
+
+        #first {
+
+            width: 190px;
+        }
+
+        #first h1 {
+
+            margin-bottom: 1vw;
+            font-family: Georgia, serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 24px;
+            color: rgb(204, 130, 80);
+        }
+
+        #first p {
+
+            font-family: 'Roboto Slab';
+            font-weight: 400;
+            font-style: normal;
+            font-size: 18px;
+        }
+
+        .name {
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .phone {
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+
+            width: 200px;
+            height: 30px;
+            margin-bottom: 2vw;
+        }
+
+        .last {
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        .email {
+
+            display: flex;
+            flex-direction: column;
+        }
+
+        form {
+
+            padding: 0px 30px;
+        }
+
+        form h1 {
+            margin-top: 10vw;
+            margin-bottom: 4vw;
+        }
+
+
+
+        button {
+            margin-top: 2vw;
+            padding: 10px 25px;
+            border: none;
+            border-bottom: 2px solid black;
+            cursor: pointer;
+            background-color: brown;
+        }
+
+        button:hover{
+
+            background-color: rgb(99, 25, 25);
+        }
+
+        button a{
+            text-decoration: none;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <div class="head">
+            <h1>Irfan<span>Acadmey</span></h1>
+        </div>
+        
+        <div class="sec">
+
+            <div class="first">
+                <div class="boxes">
+
+                    <div class="box1">
+                        <img src="https://d9hhrg4mnvzow.cloudfront.net/templates.unbounce.com/cordova-academy/5a57a1e5-cordova-academy-heroimage-01_10000000af06y00000001o.jpg"
+                            alt="">
+                    </div>
+                    <div class="box2">
+                        <img src="https://d9hhrg4mnvzow.cloudfront.net/templates.unbounce.com/cordova-academy/8fcf8b33-cordova-academy-heroimage-02_100000009706500000001o.jpg"
+                            alt="">
+                    </div>
+                </div>
+
+
+
+                <div class="box3">
+                    <h4>A clear, concise headline about your product/service.</h4>
+                    <p>Elaborate on the benefits of using your product or service — and don't stress about reading
+                        levels. Landing page conversion rates for higher education don't vary much whether you're using
+                        grade-7 language or college-level language.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bar">
+        <div class="left">
+            <div id="h1">
+                <h1>Your Benefits</h1>
+            </div>
+            <div class="b">
+                <div id="img">
+
+
+                </div>
+                <div id="first">
+                    <h1>Copy length</h1>
+                    <p>On average, pages with 125 words or less convert 15% more. But between 250 and 750 words, there's
+                        very little difference.</p>
+                </div>
+            </div>
+            <div class="b2">
+                <div id="img2">
+
+
+                </div>
+                <div id="first">
+                    <h1>Be joyful</h1>
+                    <p>Having 5+% of your copy (words like "gain," "successful," "improve," "succeed") to create
+                        feelings of joy can help boost conversion.</p>
+                </div>
+            </div>
+            <div class="b3">
+                <div id="img3">
+
+
+                </div>
+                <div id="first">
+                    <h1>What's good</h1>
+                    <p>If you can get around 5% conversion, you're doing great. Above 9.3%, and you're beating 90% of
+                        your competitors.</p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="right">
+            <form action="php.backend">
+
+                <h1>What info do you need from a lead? </h1>
+                <div class="name">
+
+                    <label for="name">First Name</label>
+                    <input type="text" name="" id="name">
+                </div>
+                <div class="last">
+                    <label for="name">Last Name</label>
+                    <input type="text" name="" id="name">
+
+                </div>
+                <div class="email">
+                    <label for="email">Enter Your Email</label>
+                    <input type="email" name="" id="email">
+
+                </div>
+                <div class="phone">
+                    <label for="number">Phone Number</label>
+                    <input type="number" name="number" id="number">
+
+
+
+
+
+                </div>
+
+                    
+                        
+                        <button><a href="">
+                            
+                            Get Something Awesome!
+                        </a>
+                    </button>
+                    
+               
+            </form>
+            
+                
+            </div>
+        </div>
+
+</body>
+
+</html>

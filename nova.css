@@ -1,0 +1,376 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+
+    width: 100%;
+    height: 100%;
+}
+
+.main {
+
+    width: 100%;
+    height: 100%;
+    /* display: flex; */
+}
+
+.navbar {
+
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-bottom: 2rem; */
+}
+
+.navbar::before {
+
+    content: "";
+    background: url('https://preview.colorlib.com/theme/nova/images/hero_1.jpg.webp') no-repeat center 0px/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    filter: brightness(0.6);
+
+}
+
+.logo h1 {
+
+    color: white;
+    font-size: 2rem;
+}
+
+.list ul {
+    display: flex;
+    align-items: center;
+}
+
+.list li {
+
+    padding: 0px 20px;
+    color: white;
+    font-weight: 400;
+    list-style: none;
+    border-radius: 20px;
+}
+
+.list li:hover{
+
+    background-color: white;
+    color: black;
+}
+
+.firstpage h1 {
+    display: inline-block;
+    width: 700px;
+    font-size: 4rem;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+.firstpage p{
+
+    text-align: center;
+    color: lightgrey;
+}
+
+
+
+.firstpage i{
+
+    position: relative;
+    top: 2vw;
+    left: 22vw;
+    color: white;
+    font-size: 8vw;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.firstpage i:hover{
+    color: rgb(215, 215, 215);
+    scale: 2;
+}
+
+
+
+.firstpage {
+display: inline-block;
+    position: relative;
+    top: 10vw;
+    left: 23vw;
+}
+
+.secondpage{
+
+    display: flex;
+    margin-top: 6rem;
+    width: 100%;
+    height: 545px;
+}
+
+.leftbox{
+
+    width: 40%;
+    height: 540px;
+    margin-right: 8vw;
+    
+   
+}
+.write{
+
+    height: 700px;
+
+    background-image: url(https://preview.colorlib.com/theme/nova/images/circle.png.webp);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+/* .write::before{
+
+    content: "";
+    background: url('https://preview.colorlib.com/theme/nova/images/circle.png.webp') no-repeat center center/cover;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+
+} */
+
+.leftbox img{
+
+    position: relative;
+    left: 5rem;
+}
+
+.write{
+
+    position: relative;
+    left: 5rem;
+    text-align: left;
+    height: 500px;
+}
+
+.write h1{
+
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    width: 350px;
+    color: red;
+    font-family:'Poppins';
+    line-height: 2.5rem;
+    
+}
+
+.write ul li{
+
+list-style-type: circle;
+color: red;
+font-size: 1.2rem;
+/* font-family: 'Poppins'; */
+font-weight: 100;
+}
+
+.write p{
+
+    width: 300px;
+    margin-bottom: 8vw;
+}
+
+.write button{
+
+    position: relative;
+
+    top: 4rem;
+    left: 2rem;
+    padding: 10px 30px;
+    border-radius: 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.write button:hover{
+
+    background-color: rgb(168, 25, 25);
+}
+
+.rightbox{
+
+    width: 60%;
+    height: 540px;
+}
+
+.rightbox img{
+
+    width:100%;
+    height:100%;
+    border-radius: 20vw 2vw 20vw 2vw;
+}
+
+.teachers{
+
+    width: 100%;
+    height: 513px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.theory{
+
+    width: 250px;
+    height: 400px;
+    /* border: 2px solid red; */
+    margin: 2vw;
+    border-radius: 6vw 6vw 20vw 2vw;
+    text-align: center;
+}
+
+.teach{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.theory h1{
+
+    font-size: 1.5rem;
+    margin-top: 4rem;
+}
+
+.img{
+
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: relative;
+    
+    top: 4rem;
+    box-shadow: 1px 1px 2px 2px grey;
+}
+    
+    
+
+
+
+.img img{
+
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+
+#t1{
+
+    background-color:#f8efd4 ;
+}
+
+#t2{
+
+    background-color:#e6e7f6 ;
+}
+
+#t3{
+
+    background-color: #ddf8f6;
+}
+
+#t4{
+
+    background-color:#f9e4e4 ;
+}
+
+.third{
+
+     margin-top: 4rem;
+     text-align: center;
+}
+
+.third h1{
+
+    color: red;
+    font-size: 2.5rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  
+}
+
+.footer{
+margin-top: 6rem;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    
+}
+
+.box{
+
+    width: 20%;
+    height: 100%;
+    /* text-align: center; */
+    margin:0rem 2rem ;
+}
+
+.box h1{
+
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+}
+
+.box h2{
+
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.box li{
+
+    list-style: none;
+    padding-bottom: 5px;
+}
+
+.box p{
+
+    padding-bottom: 10px;
+}
+
+.copy{
+
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.copy span{
+
+    color: red;
+    
+}
+
+.icons i{
+
+    padding-right: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.icons i:hover{
+
+    color: red;
+}

@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Baloo+Bhaijaan+2&family=Balsamiq+Sans&family=Dancing+Script&family=Merriweather:wght@300&family=Poppins:ital,wght@0,700;0,800;0,900;1,400&family=Roboto&family=Roboto+Slab:wght@300;700&family=Ubuntu:wght@300&display=swap"
+    rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins';
+
+}
+
+body {
+    background-color: white;
+    color: black;
+    margin: 0;
+    padding: 0;
+
+}
+
+.lightmode{
+
+    background-color: white;
+    color: black;
+}
+
+.darkmode{
+
+    background-color: black;
+    color: white;
+}
+
+.circlemode{
+
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}
+
+
+.main {
+
+    width: 100%;
+    height: auto;
+}
+.top::before{
+
+content: "";
+background: url(image1.png);
+background-position: center;
+background-repeat: no no-repeat;
+background-size: cover;
+position: absolute;
+left: 0;
+top: 0;
+width: 100%;
+height: 60px;
+z-index: -1;
+filter: brightness(0.4);
+}
+
+.top {
+
+width: 100%;
+height: 60px;
+/* background-color: black; */
+color: white;
+display: flex;
+align-items: center;
+justify-content: space-around;
+position: fixed;
+z-index: 999;
+box-shadow: 2px 2px 12px 2px #8490ff;
+top: 2px;
+}
+
+.lists{
+display: flex;
+align-items: center;
+}
+
+.lists ul {
+
+display: flex;
+align-items: center;
+}
+
+.lists ul li {
+
+list-style: none;
+padding-right: 2rem;
+}
+
+
+.lists ul li a{
+
+text-decoration: none;
+color: white;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.icon i {
+
+display: none;
+cursor: pointer;
+}
+
+
+.grid3{
+
+box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 1rem;
+  row-gap: 8rem;
+ 
+  
+}
+
+
+#grand1{
+
+  grid-column: 2 span;
+  text-align: center;
+  padding-top: 6rem;
+}
+
+.grand p{
+
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgba(165, 163, 163, 0.911);;
+}
+
+
+.grand img{
+
+  width: 100%;
+  height: 100%;
+  box-shadow: 3px 2px 22px 4px #8490ff;
+}
+
+
+.grand{
+
+  padding: 0rem 6rem;
+}
+
+.btns{
+
+margin-top: 1rem;
+padding: 0.5rem 1rem;
+background-color: #8490ff;
+color: white;
+border: none;
+box-shadow: 2px 2px 12px 2px #8490ff;
+cursor: pointer;
+}
+
+
+.btns a{
+
+  text-decoration: none;
+  color: white;
+}
+
+
+    </style>
+</head>
+<body id="body">
+    <div class="main">
+
+        <div class="top">
+
+            <div class="log">
+                <h1>Rameez
+
+                </h1>
+            </div>
+            <div class="lists">
+                <ul id="tags">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li>
+                        <a href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li><a href="pricing.html">Pricing</a></li>
+                    <li><a href="">Blog</a></li>
+                    <li><a href="">Pages</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+                <div class="circlemode" id="gol"><i class="ri-moon-fill"></i></div>
+            </div>
+
+            <div class="icon">
+                <i id="btn" class="ri-menu-line"></i>
+            </div>
+        </div>
+        <div class="grid3">
+            <div class="grand" id="grand1">
+                <h1>Our latest Featured Projects</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, eligendi?</p>
+            </div>
+            <div class="grand" id="grand2">
+                <img src="photos/ecogreen image.png" alt="">
+            </div>
+            <div class="grand" id="grand3">
+                <h3>About the Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem necessitatibus unde, nulla
+                    accusantium libero sapiente aliquam ipsa reprehenderit harum laborum commodi animi quos voluptatum
+                    neque doloremque nam, repellat, cumque laboriosam iste tenetur ea nisi eum! Ipsum, similique quos
+                    placeat optio ratione eius ipsam corporis obcaecati consequuntur non, ex quaerat doloremque.</p>
+                <button class="btns"><a href="ecogreen.html/eco.html" target="-blank">PREVIEW</a></button>
+            </div>
+            <div class="grand" id="grand4">
+                <h3>About the Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem necessitatibus unde, nulla
+                    accusantium libero sapiente aliquam ipsa reprehenderit harum laborum commodi animi quos voluptatum
+                    neque doloremque nam, repellat, cumque laboriosam iste tenetur ea nisi eum! Ipsum, similique quos
+                    placeat optio ratione eius ipsam corporis obcaecati consequuntur non, ex quaerat doloremque.</p>
+                <button class="btns"><a href="Project Anime Website/Nova Karate/index.html"
+                        target="-blank">PREVIEW</a></button>
+            </div>
+            <div class="grand" id="grand5">
+                <img src="photos/nova image.png" alt="">
+            </div>
+            <div class="grand" id="grand6">
+                <img src="photos/business website image.png" alt="">
+            </div>
+            <div class="grand" id="grand7">
+                <h3>About the Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem necessitatibus unde, nulla
+                    accusantium libero sapiente aliquam ipsa reprehenderit harum laborum commodi animi quos voluptatum
+                    neque doloremque nam, repellat, cumque laboriosam iste tenetur ea nisi eum! Ipsum, similique quos
+                    placeat optio ratione eius ipsam corporis obcaecati consequuntur non, ex quaerat doloremque.</p>
+                <button class="btns"><a href="Bussiness Website Clone/index.html" target="-blank">PREVIEW</a></button>
+            </div>
+            <div class="grand" id="grand8">
+                <h3>About the Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem necessitatibus unde, nulla
+                    accusantium libero sapiente aliquam ipsa reprehenderit harum laborum commodi animi quos voluptatum
+                    neque doloremque nam, repellat, cumque laboriosam iste tenetur ea nisi eum! Ipsum, similique quos
+                    placeat optio ratione eius ipsam corporis obcaecati consequuntur non, ex quaerat doloremque.</p>
+                <button class="btns"><a href="Project Anime Website/anime.html" target="-blank">PREVIEW</a></button>
+            </div>
+            <div class="grand" id="grand9">
+                <img src="photos/anime image.png" alt="">
+            </div>
+            <div class="grand" id="grand10">
+                <img src="photos/digital design.png" alt="">
+            </div>
+            <div class="grand" id="grand11">
+                <h3>About the Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem necessitatibus unde, nulla
+                    accusantium libero sapiente aliquam ipsa reprehenderit harum laborum commodi animi quos voluptatum
+                    neque doloremque nam, repellat, cumque laboriosam iste tenetur ea nisi eum! Ipsum, similique quos
+                    placeat optio ratione eius ipsam corporis obcaecati consequuntur non, ex quaerat doloremque.</p>
+                <button class="btns"><a href="New folder (3)/design.html" target="-blank">PREVIEW</a></button>
+            </div>
+            <div class="grand" id="grand12">
+                <h3>About the Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem necessitatibus unde, nulla
+                    accusantium libero sapiente aliquam ipsa reprehenderit harum laborum commodi animi quos voluptatum
+                    neque doloremque nam, repellat, cumque laboriosam iste tenetur ea nisi eum! Ipsum, similique quos
+                    placeat optio ratione eius ipsam corporis obcaecati consequuntur non, ex quaerat doloremque.</p>
+                <button class="btns"><a href="Project Anime Website/New folder (3)/listing website.html"
+                        target="-blank">PREVIEW</a></button>
+            </div>
+            <div class="grand" id="grand13">
+                <img src="photos/listing image.png" alt="">
+            </div>
+            <div class="grand" id="grand14">
+                <img src="photos/foodish website.png" alt="">
+            </div>
+            <div class="grand" id="grand15">
+                <h3>About the Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem necessitatibus unde, nulla
+                    accusantium libero sapiente aliquam ipsa reprehenderit harum laborum commodi animi quos voluptatum
+                    neque doloremque nam, repellat, cumque laboriosam iste tenetur ea nisi eum! Ipsum, similique quos
+                    placeat optio ratione eius ipsam corporis obcaecati consequuntur non, ex quaerat doloremque.</p>
+                <button class="btns"><a href="Project Anime Website/New folder (4)/food complete website2.html"
+                        target="-blank">PREVIEW</a></button>
+            </div>
+            <div class="grand" id="grand16">
+                <h3>About the Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem necessitatibus unde, nulla
+                    accusantium libero sapiente aliquam ipsa reprehenderit harum laborum commodi animi quos voluptatum
+                    neque doloremque nam, repellat, cumque laboriosam iste tenetur ea nisi eum! Ipsum, similique quos
+                    placeat optio ratione eius ipsam corporis obcaecati consequuntur non, ex quaerat doloremque.</p>
+                <button class="btns"><a href="practice/Irfan.html" target="-blank">PREVIEW</a></button>
+            </div>
+            <div class="grand" id="grand17">
+                <img src="photos/irfan image.png" alt="">
+            </div>
+            <div class="grand" id="grand18">
+                <img src="photos/alher image.png" alt="">
+            </div>
+            <div class="grand" id="grand19">
+                <h3>About the Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem necessitatibus unde, nulla
+                    accusantium libero sapiente aliquam ipsa reprehenderit harum laborum commodi animi quos voluptatum
+                    neque doloremque nam, repellat, cumque laboriosam iste tenetur ea nisi eum! Ipsum, similique quos
+                    placeat optio ratione eius ipsam corporis obcaecati consequuntur non, ex quaerat doloremque.</p>
+                <button class="btns"><a href="practice/gridwebsite.html" target="-blank">PREVIEW</a></button>
+            </div>
+            <div class="grand" id="grand20">
+                <h3>About the Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem necessitatibus unde, nulla
+                    accusantium libero sapiente aliquam ipsa reprehenderit harum laborum commodi animi quos voluptatum
+                    neque doloremque nam, repellat, cumque laboriosam iste tenetur ea nisi eum! Ipsum, similique quos
+                    placeat optio ratione eius ipsam corporis obcaecati consequuntur non, ex quaerat doloremque.</p>
+                <button class="btns"><a href="practice/mova.html" target="-blank">PREVIEW</a></button>
+            </div>
+            <div class="grand" id="grand21">
+                <img src="photos/mova image.png" alt="">
+            </div>
+            <div class="grand" id="grand22">
+                <img src="photos/shoes website image.png" alt="">
+            </div>
+            <div class="grand" id="grand23">
+                <h3>About the Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem necessitatibus unde, nulla
+                    accusantium libero sapiente aliquam ipsa reprehenderit harum laborum commodi animi quos voluptatum
+                    neque doloremque nam, repellat, cumque laboriosam iste tenetur ea nisi eum! Ipsum, similique quos
+                    placeat optio ratione eius ipsam corporis obcaecati consequuntur non, ex quaerat doloremque.</p>
+                <button class="btns"><a href="photos/shoes websites/index.html" target="-blank">PREVIEW</a></button>
+            </div>
+            <div class="grand" id="grand24">
+                <h3>About the Project</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem necessitatibus unde, nulla
+                    accusantium libero sapiente aliquam ipsa reprehenderit harum laborum commodi animi quos voluptatum
+                    neque doloremque nam, repellat, cumque laboriosam iste tenetur ea nisi eum! Ipsum, similique quos
+                    placeat optio ratione eius ipsam corporis obcaecati consequuntur non, ex quaerat doloremque.</p>
+                <button class="btns"><a href="practice/landing.html" target="-blank">PREVIEW</a></button>
+            </div>
+            <div class="grand" id="grand25">
+                <img src="photos/landing image.png" alt="">
+            </div>
+        </div>
+    </div>
+    <script>
+        let body = document.getElementById('body');
+let gol = document.getElementById('gol');
+
+gol.addEventListener('click', function () {
+
+  if (body.classList.contains('lightmode') || body.className === '') {
+
+    body.className = 'darkmode';
+    gol.style.backgroundColor = 'orange';
+    gol.style.color = 'white';
+  } else {
+
+    body.className = 'lightmode';
+    gol.style.backgroundColor = 'white';
+    gol.style.color = 'black';
+  }
+})
+
+    </script>
+</body>
+</html>

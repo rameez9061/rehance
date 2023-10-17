@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Baloo+Bhaijaan+2&family=Balsamiq+Sans&family=Dancing+Script&family=Merriweather:wght@300&family=Poppins:ital,wght@0,700;0,800;0,900;1,400&family=Roboto&family=Roboto+Slab:wght@300;700&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins';
+
+        }
+
+        body {
+            background-color: white;
+            color: black;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .lightmode {
+
+            background-color: white;
+            color: black;
+        }
+
+        .darkmode {
+
+            background-color: black;
+            color: white;
+        }
+
+        .circlemode {
+
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+
+
+        .main {
+
+            width: 100%;
+            height: auto;
+        }
+
+        .bac {
+            width: 100%;
+            height: 100%;
+        }
+
+        .top::before {
+
+            content: "";
+            background: url(image1.png);
+            background-position: center;
+            background-repeat: no no-repeat;
+            background-size: cover;
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 60px;
+            z-index: -1;
+            filter: brightness(0.4);
+        }
+
+        .top {
+
+            width: 100%;
+            height: 60px;
+            /* background-color: black; */
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            position: fixed;
+            z-index: 999;
+            box-shadow: 2px 2px 12px 2px #8490ff;
+            top: 2px;
+        }
+
+        .lists {
+            display: flex;
+            align-items: center;
+        }
+
+        .lists ul {
+
+            display: flex;
+            align-items: center;
+        }
+
+        .lists ul li {
+
+            list-style: none;
+            padding-right: 2rem;
+        }
+
+
+        .lists ul li a {
+
+            text-decoration: none;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+
+
+        .icon i {
+
+            display: none;
+            cursor: pointer;
+        }
+
+        .biodata {
+            margin-top: 5rem;
+            text-align: center;
+            padding: 0rem 5rem;
+        }
+
+        .biodata h1 {
+
+            padding: 2rem 0rem;
+        }
+
+        .biodata p {
+
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #portion {
+
+            display: flex;
+            margin-bottom: 2rem;
+        }
+
+        #portion p {
+
+
+            padding: 2rem;
+        }
+
+        #first {
+            border-right: 2px solid black;
+
+        }
+
+        .skillhead {
+            width: 100%;
+            text-align: center;
+        }
+
+        .all {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+
+        .skillbox{
+
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 2px 2px 12px 2px #8490ff;
+            margin: 1rem;
+        }
+
+        .skillbox p{
+           
+             box-sizing: border-box;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            
+        }
+
+
+        .vision{
+
+            text-align: center;
+            margin-top: 1rem;
+            padding: 5rem 5rem;
+        }
+
+        .vision p{
+  margin-top: 1.5rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+    </style>
+</head>
+
+<body id="body">
+
+    <div class="top">
+
+        <div class="log">
+            <h1>Rameez
+
+            </h1>
+        </div>
+        <div class="lists">
+            <ul id="tags">
+                <li><a href="rameez.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li>
+                    <a href="portfolio.html">Portfolio</a>
+                </li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Pages</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+            <div class="circlemode" id="gol"><i class="ri-moon-fill"></i></div>
+        </div>
+
+        <div class="icon">
+            <i id="btn" class="ri-menu-line"></i>
+        </div>
+    </div>
+    <div class="biodata">
+        <h1>AFTAB KHAN</h1>
+        <h3> Description</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi sapiente, alias repudiandae deleniti dolorem
+            placeat! Natus accusantium laboriosam veritatis aspernatur rem, provident illum odit repudiandae optio
+            nesciunt in obcaecati unde necessitatibus doloremque eius ipsum! Cum iste harum itaque debitis praesentium?
+            Corporis ratione, aliquid eveniet ab beatae delectus. Voluptatum modi possimus vitae quisquam cum iure
+            dolorum, id perspiciatis iste voluptas adipisci suscipit ut ad? Quam unde maiores, hic asperiores amet,
+            reiciendis vel inventore nostrum impedit vero aperiam dolore. Distinctio id, repellat doloremque voluptas
+            eius quaerat a nulla numquam sequi omnis tempore iusto debitis laudantium autem explicabo nostrum
+            necessitatibus totam, accusamus magnam beatae ipsum sint eligendi minima esse. Suscipit, nam voluptatum
+            libero sed voluptatem iste nobis inventore rerum veniam nemo vel dolorum ipsam autem eius ad ratione at aut
+            deleniti repellat? Rem sequi, exercitationem corrupti deleniti ipsam vel consequatur consectetur
+            praesentium, aperiam ab earum. Ullam natus quibusdam, earum repudiandae dolorum quaerat libero eligendi
+            aliquam et minima illum ut illo voluptate inventore. Tempore, sequi? Sed nostrum vero ullam praesentium
+            impedit nemo pariatur voluptates, laborum consequatur sequi dignissimos quibusdam enim consectetur esse
+            aliquid quasi nihil debitis eos maiores aut nisi? Nemo at nam aperiam. Vel voluptatem cumque consequatur
+            numquam, quos amet commodi iste accusantium!</p>
+        <div class="EDU">
+
+            <h1>EDUCATION</h1>
+            <div id="portion">
+                <p id="first">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, cumque. Lorem,
+                    ipsum dolor sit amet consectetur adipisicing elit. Iusto, quisquam! Lorem ipsum dolor sit, amet
+                    consectetur adipisicing elit. Quisquam laborum similique vitae quia quaerat perferendis, mollitia
+                    nulla incidunt qui sed facilis velit consequatur optio, doloribus nam dolores, pariatur excepturi
+                    quas!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, blanditiis? Lorem ipsum dolor sit
+                    amet consectetur adipisicing elit. Recusandae, laborum? Lorem ipsum dolor sit amet, consectetur
+                    adipisicing elit. Eum voluptas, cumque doloremque deserunt aliquid doloribus hic cum, dicta, dolores
+                    est amet magni eveniet obcaecati incidunt! Quisquam at architecto praesentium voluptatibus!</p>
+            </div>
+
+
+        </div>
+
+    </div>
+    <div class="skills">
+        <div class="skillhead">
+            <h1> Skills</h1>
+        </div>
+        <div class="all">
+            <div class="skillbox" id="skillbox1">
+                <h2>HTML</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi voluptatem illum doloribus culpa
+                    debitis excepturi consequuntur dignissimos error quaerat voluptates explicabo, expedita delectus
+                    molestiae porro tempora vel laboriosam necessitatibus molestias!</p>
+            </div>
+            <div class="skillbox" id="skillbox2">
+                <h2>CSS</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi voluptatem illum doloribus culpa
+                    debitis excepturi consequuntur dignissimos error quaerat voluptates explicabo, expedita delectus
+                    molestiae porro tempora vel laboriosam necessitatibus molestias!</p>
+            </div>
+            <div class="skillbox" id="skillbox3">
+                <h2>JAVASCRIPT</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi voluptatem illum doloribus culpa
+                    debitis excepturi consequuntur dignissimos error quaerat voluptates explicabo, expedita delectus
+                    molestiae porro tempora vel laboriosam necessitatibus molestias!</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="vision">
+        <h1>OUR VISION</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto amet molestias, libero provident ipsa aperiam ducimus at alias voluptatem magnam praesentium explicabo, itaque nulla. Tempore corrupti repudiandae, iste exercitationem aliquam magnam accusamus. Accusantium dolorem nostrum ducimus iusto, cupiditate velit quis hic? A eum, amet ratione doloremque iure saepe, adipisci non quidem vero modi officia id rem dicta perferendis ipsa consequuntur cumque quae explicabo laborum officiis tempora laudantium aliquid repellendus repudiandae? Sapiente corporis sunt cum ea tenetur natus totam qui unde voluptatibus distinctio, mollitia, consequuntur, saepe harum assumenda quas obcaecati repudiandae perspiciatis dolorem aspernatur at fugit blanditiis veniam impedit nam? Totam ad voluptas nulla labore eligendi quia explicabo quis repellat cumque culpa mollitia libero minus eos dicta nihil esse vero veniam facilis, ipsam a id perferendis earum? Sit error aliquid dignissimos corporis, vel consequuntur dolores aperiam, hic enim rerum ipsum voluptatem nihil! Delectus at commodi esse accusamus ducimus incidunt tempore necessitatibus dolor? Ea laboriosam cupiditate repellendus non illum itaque suscipit libero ipsa voluptate eveniet nisi quae unde dolores, asperiores expedita assumenda. Corporis, tempora a. Neque atque doloremque quasi suscipit eaque natus! Quam magni quos adipisci voluptate mollitia, animi fuga reprehenderit harum ex. Expedita, error. Architecto distinctio doloremque odio debitis, nulla laudantium.</p>
+    </div>
+    <script>
+        let body = document.getElementById('body');
+        let gol = document.getElementById('gol');
+
+        gol.addEventListener('click', function () {
+
+            if (body.classList.contains('lightmode') || body.className === '') {
+
+                body.className = 'darkmode';
+                gol.style.backgroundColor = 'orange';
+                gol.style.color = 'white';
+            } else {
+
+                body.className = 'lightmode';
+                gol.style.backgroundColor = 'white';
+                gol.style.color = 'black';
+            }
+        })
+
+    </script>
+</body>
+
+</html>
